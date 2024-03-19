@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Get A Quote | NEON WHITE</title>
+        <link rel="stylesheet" href="quote-styles.css">
+        <link rel="stylesheet" href="general-styles.css">
+        <link rel="icon" type="image/x-icon"
+            href="https://images.squarespace-cdn.com/content/v1/61fd778b0cb2be0c1b903334/da3da886-8103-47b0-93c3-b7f14e566cb6/favicon.ico?format=100w" />
+
+    </head>
+    <body>
+        <div class="topbar">
+            <a href="index.html">
+                <img class="side-logo" src="logo/logo.png"
+                    srcset="logo/logo.png 750w, logo/logo-480.png 480w, logo/logo-360.png 360w"
+                    width="138" 
+                    height="96" 
+                    alt="Neon White Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="works.html">Gallery</a></li>
+                    <li class="target"><a href="quote.html">Get A Quote</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="text">
+            <h2>Tell Us About Your Project!</h2>
+        </div>
+        <div class="form">
+            <!-- post the responses to a form website -->
+            <form method="post" action="https://formspree.io/f/xdorrdrb">
+            
+            <div class="name">
+            <label>
+                First Name <!-- the user will see -->
+                <input type="text" name="first-name" required>
+            </label>
+        
+            <label>
+                Last Name <!-- the user will see -->
+                <!-- [required] ensure user answer this question -->
+                <input type="text" name="last-name" required>
+            </label>
+            </div>
+
+            <label>
+                Email <!-- the user will see -->
+                <input type="email" name="email" required>
+            </label>
+       
+            <!-- dropdown menu -->
+            <label>
+                What Type of Design Do You Need?
+                <select name="design-type" required>
+                    <option value="" disabled selected>Select a design type</option>
+                    <option value="album">Album Cover</option>
+                    <option value="lp">LP Design</option>
+                    <option value="book">Book Cover</option>
+                    <option value="campaign">Business Campaign Design</option>
+                    <option value="movie">Movie Poster</option>
+                    <option value="logo">Logo Design</option>
+                </select>
+            </label>
+        
+            
+            <label>
+                Project Details 
+                <textarea required name="message" cols="36" rows="6" placeholder="Briefly describe details of your project, such as style, content, and theme here." ></textarea>
+                <!-- placeholder is a prompt that user will see, disappear when user type anything -->
+            </label>
+        
+        
+            <!-- share website -->
+            <label>
+                If you have a sample, please share its URL:
+                <input type="url" name="website">
+            </label>
+        
+        
+            <!-- submit the form -->
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+            </form>
+        </div> 
+        <footer>
+            <div class="footertext">
+                <strong>
+                    <em>FUTURE</em>
+                </strong>
+                <em>OF DESIGN</em> 
+            </div>
+            
+            <div id="footerBlocks" class="social-links sqs-svg-icon--list" data-content-field="connected-accounts">
+                <a href="https://www.facebook.com/NEON-WHITE-107847851855658" target="_blank" class="sqs-svg-icon--wrapper facebook-unauth">
+                <div>
+                    <svg class="sqs-svg-icon--social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#3dd9eb" d="M29,3c-5.523,0-10,4.477-10,10v32h8V14c0-2.209,1.791-4,4-4h4V3.322C33.091,3.125,30.921,2.996,29,3 L29,3z"></path><polygon fill="#3dd9eb" points="34,25.979 13,25.979 13,18 35,18"></polygon><rect width="8" height="7.979" x="19" y="18" fill="#00b3d7"></rect>
+                    </svg>
+                </div>
+                </a>
+            
+                <a href="https://www.instagram.com/neonwhitedesigns/" target="_blank" class="sqs-svg-icon--wrapper instagram-unauth">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256"
+                    style="fill:#FFDCEB;">
+                    <g fill="#f25081" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(9.84615,9.84615)"><path d="M7.54688,0c-4.15625,0 -7.54687,3.39063 -7.54687,7.54688v10.90625c0,4.15625 3.39063,7.54688 7.54688,7.54688h10.90625c4.15625,0 7.54688,-3.39062 7.54688,-7.54687v-10.90625c0,-4.15625 -3.39062,-7.54687 -7.54687,-7.54687zM7.54688,2h10.90625c3.07422,0 5.54688,2.46875 5.54688,5.54688v10.90625c0,3.07422 -2.46875,5.54688 -5.54687,5.54688h-10.90625c-3.07422,0 -5.54687,-2.46875 -5.54687,-5.54687v-10.90625c0,-3.07422 2.46875,-5.54687 5.54688,-5.54687zM20.5,4c-0.82812,0 -1.5,0.67188 -1.5,1.5c0,0.82813 0.67188,1.5 1.5,1.5c0.82813,0 1.5,-0.67187 1.5,-1.5c0,-0.82812 -0.67187,-1.5 -1.5,-1.5zM13,6c-3.85547,0 -7,3.14453 -7,7c0,3.85547 3.14453,7 7,7c3.85547,0 7,-3.14453 7,-7c0,-3.85547 -3.14453,-7 -7,-7zM13,8c2.77344,0 5,2.22656 5,5c0,2.77344 -2.22656,5 -5,5c-2.77344,0 -5,-2.22656 -5,-5c0,-2.77344 2.22656,-5 5,-5z"></path></g></g>
+                    </svg>
+                </div>
+                </a>
+            
+                <a href="https://www.linkedin.com/company/neon-white/" target="_blank" class="sqs-svg-icon--wrapper linkedin-unauth">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#0288d1" d="M8.421 14h.052 0C11.263 14 13 12 13 9.5 12.948 6.945 11.263 5 8.526 5 5.789 5 4 6.945 4 9.5 4 12 5.736 14 8.421 14zM4 17H13V43H4zM44 26.5c0-5.247-4.253-9.5-9.5-9.5-3.053 0-5.762 1.446-7.5 3.684V17h-9v26h9V28h0c0-2.209 1.791-4 4-4s4 1.791 4 4v15h9C44 43 44 27.955 44 26.5z"></path>
+                    </svg>
+                </div>
+                </a>
+            </div>
+        </footer>
+        <script src="change-bg.js"></script>
+    </body>   
+</html>

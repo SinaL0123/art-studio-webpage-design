@@ -1,0 +1,105 @@
+body{
+    background-image: url("https://gifdb.com/images/high/black-background-black-waves-d8fbav58488h6bog.gif");
+    background-size:auto;
+}
+
+.homeheader {
+    padding-top: 3%;
+    display: flex;
+    color: aquamarine;
+    font-size: 2em;
+    align-items: center;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.homeheader h1 {
+    margin: 0;
+}
+
+.homeheader img {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+
+.homepic {
+    padding: 50px;
+    width: 50%;
+    align-self: center;
+    margin-left: auto; 
+    margin-right: auto; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 3em;
+    justify-content: center;
+}
+
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container img{
+    transition-property: opacity;
+    transition-duration: 400ms; /*makes the transition of opacity more smooth*/
+}
+
+.image-text {
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 20px; 
+    left:0;
+    right:0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 10px;
+    transition-property: color;
+    transition-duration: 400ms;
+}
+
+@media only screen and (max-width: 45em) {
+    /* homepage */
+    body {
+        background-attachment: scroll;
+    }
+
+
+    .homeheader img{
+        width:172.5px;
+        height:120px;
+    }
+    .homepic {
+        padding: 20px;
+        width: 100%;
+        margin-left: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .image-container {
+        width: 100%;
+        margin-left:-15px;
+    }
+
+    .image-container img {
+        width: 100%; /* Fill the container width */
+        max-height: 300px; /* Set a maximum height for the image, adjust as needed */
+        width:auto;
+    }
+
+    .image-text {
+        bottom: 10px;
+        font-size: 1.3em;
+    }
+
+    h1 {
+        font-size: 1.1em;
+    }
+
+}
+
+
